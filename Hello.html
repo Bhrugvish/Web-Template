@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<style>
+.image1{
+ content:"";display:table;clear:both;
+ padding-top:32px;padding-bottom:32px;
+}
+.image11{
+float:left;width:30%;
+margin-bottom:16px;
+padding: 10px 10px;
+}
+.imagehover-opacity{
+  opacity:0.60;
+}
+.imagecomtainer{
+content:"";display:table;clear:both;
+color:#000;background-color:#fff;
+}
+  .cities{
+    background-color: black;
+    color: white;
+    font-size:20px;
+    position: fixed;
+    width: 100%;
+  }
+  a:link {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+
+    display: inline-block;
+  }
+  body {font-family: "Lato", sans-serif;
+  margin: 0;
+}
+  button{
+    font-family: "Lato", sans-serif;
+    font-size:20px;
+
+  }
+  a:visited {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+
+    display: inline-block;
+  }
+  a:hover {
+    color: white;
+    background-color: darkgrey;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+
+    display: inline-block;
+  }
+  a:active {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+  }
+  .dropbtn {
+    background-color: black;
+    color: white;
+
+    font-size: 20px;
+    border: none;
+  }
+  .kbutton{
+    border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;
+    color:#fff;background-color:#000;
+    margin-bottom:16px;
+  }
+.one{
+  opacity: 70%;
+}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    text-align: left;
+    min-width: 160px;
+    font-size:15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    text-align: left;
+
+    text-decoration: none;
+    display: block;
+  }
+  .k{
+    padding: 25px 350px;
+     
+
+  }
+  .abcd{
+    text-align: center;
+    font-size: 30px;
+
+  }
+  .tag3{
+    background-color:#fff;color:#000;
+    display: table;
+    
+    
+    padding-left:8px;padding-right:8px;
+    padding: 5px 5px;
+
+  }
+  .middle_titiel{
+    font-style: italic;
+    text-align: center;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+
+
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: black;}
+.Slides{
+  display: none;
+}
+.tag32{
+ 
+  background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center;
+   margin-left: 16px;
+  color:#fff;background-color:#f44336;
+}
+.touring{
+  padding-top: 100px;
+  background-color: black;
+   padding: 25px 350px;
+ max-width:800px;
+  color:white;
+
+}
+.tag23{
+
+padding-right: 400px;
+
+}
+.tourguide{
+  background-color: white;
+color: black;
+    border: 5px ;
+    border-style: solid;
+
+}
+.tourdate{
+  padding-top: 100px;
+   letter-spacing: 4px;
+   font-weight: 400;
+   text-align: center;
+    font-family: sans-serif;
+}
+.ticket{
+ 
+  opacity: 80%;
+  text-align: center;
+
+}
+.title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 02;
+  font-style: normal;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+}
+.contact{
+  padding: 50px 120px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family:sans-serif;
+  padding-left: 100px;
+
+}
+
+
+.p1{
+  
+  font-family: "lato";
+  font-size: 17px;
+  text-align: center;
+  font-weight: 400;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 05px 64px;
+}
+.Search_symbol{
+  position: absolute;
+
+  
+}
+.margin-bottom{
+  margin-bottom:16px;
+}
+.row {
+  display: flex;
+  float: left;
+ 
+ 
+  
+}
+
+/* Create two equal columns that sits next to each other */
+
+.column img {
+  margin-top: 2px;
+  vertical-align: left;
+
+}
+
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  
+
+<div class="cities">
+  <a href="#">HOME</a>
+  <a href="#">BRAND</a>
+  <a href="#">TOUR</a>
+  <a href="#">CONTACT</a>
+  <div class="dropdown">
+    <button class="dropbtn">MORE</button>
+    <div class="dropdown-content">
+      <a href="#">Merchandise</a>
+      <a href="#">Extra</a>
+      <a href="#">Media</a>
+    </div>
+     
+  </div>
+  <button style="float: right;"  class="fa fa-search"  ></button>
+</div>
+<div class="Slide">
+  <img src="/Users/himadrivakil/WebstormProjects/Firstwebsite/src/abc.png" style="width:100%">
+</div>
+<div class="Slide">
+  <img src="/Users/himadrivakil/WebstormProjects/Firstwebsite/src/abc2.png" style="width:100%">
+</div>
+<div class="Slide">
+  <img src="/Users/himadrivakil/WebstormProjects/Firstwebsite/src/abc1.png" style="width:100%">
+</div>
+<div class="k">
+  <h1 class="title">THE BAND </h1>
+  <p class="middle_titiel">We love music</p>
+  <p class="p1" > We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+
+<div class="row">
+
+      <div class="colum">
+        <p>Name</p>
+        <img src="/Users/himadrivakil/WebstormProjects/Firstwebsite/src/efg.jpeg" class="margin-bottom" alt="Random Name" style="width:40%;height:60%">
+      </div>
+      <div class="colum">
+        <p>Name</p>
+        <img src="/Users/himadrivakil/WebstormProjects/Firstwebsite/src/efg.jpeg" class="margin-bottom" alt="Random Name" style="width:40%; height:60%">
+      </div>
+      <div class="colum">
+        <p>Name</p>
+        <img src="/Users/himadrivakil/WebstormProjects/Firstwebsite/src/efg.jpeg" class="margin-bottom" alt="Random Name" style="width:40%;
+        height:60%">
+      </div>
+  </div>
+</div>
+
+<!-- Tour Section-->
+
+<div class="tourdates" >
+<div class="touring" >
+      <h1 class="tourdate">TOUR DATES</h1>
+      <p class="ticket"><i>Remember to book your tickets!</i></p><br>
+        <ul class="tourguide">
+        <li class="tag3">September <span class="tag32 ">Sold out</span></li><br>
+        <li class="tag3">October <span class="tag32 ">Sold out</span></li><br>
+        <li class="tag3">November <span class="tag23 ">3</span></li>
+      </ul>
+      <div class="image1" style="margin:0 -16px">
+        <div class="image11">
+          <img src="/Users/himadrivakil/WebstormProjects/Firstwebsite/src/efg123.jpeg" alt="New York"  class="imagehover-opacity" style="width:100%; height:100%">
+          <div class="imagecomtainer">
+            <p><b>New York</b></p>
+            <p class="one">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="kbutton" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="image11">
+          <img src="/Users/himadrivakil/WebstormProjects/Firstwebsite/src/download2.jpg" alt="Paris" s class="w3-hover-opacity" style="width:100%; height:85%">
+          <div class="imagecomtainer">
+            <p><b>Paris</b></p>
+            <p class="one">Sat 28 Nov 2016</p>
+            <p >Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="kbutton" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="image11">
+          <img src="/Users/himadrivakil/WebstormProjects/Firstwebsite/src/download.jpeg" alt="San Francisco" style="width:100%; height:100%" class="imagehover-opacity">
+          <div class="imagecomtainer">
+            <p><b>San Francisco</b></p>
+            <p class="one">Sun 29 Nov 2016</p>
+            <p >Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="kbutton" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="contact"  id="contact">
+    <h2 class="centerwide">CONTACT</h2>
+    <p class="center"><i>Fan? Drop a note!</i></p>
+    <div class="pad32">
+      <div class="look">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="form">
+        <form action="#" target="_blank">
+          <div class="" style="margin:0 -16px 8px -16px">
+            <div class="">
+              <input class="" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="">
+              <input class="" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="" type="text" placeholder="Message" required name="Message">
+          <button class="" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<div class="map1">
+  <img src="/Users/himadrivakil/WebstormProjects/Firstwebsite/src/download3.jpeg" alt="San Francisco" style="width:100%; height:100%" class="imagehover-opacity">
+  </div>
+<footer class="abcd">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("Slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+</body>
+</html>
